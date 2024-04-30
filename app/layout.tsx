@@ -19,11 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body className="bg-gray-900">
         <ActiveSectionContextProvider>
           <main className="bg-gray-900">
             <Navbar />
-            <div className="min-h-screen flex flex-col items-center py-32">
+            <div className="min-h-screen flex flex-col items-center py-20">
               {children}
             </div>
             <Footer />
