@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
+import ActiveSectionContextProvider from "@/components/ui/active-section-context";
+import Footer from "@/components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,9 +19,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
-        {children}
+      <body className={`${inter.className}`}>
+        <ActiveSectionContextProvider>
+          <main className="bg-gray-900">
+            <Navbar />
+            <div className="min-h-screen flex flex-col items-center py-32">
+              {children}
+            </div>
+            <Footer />
+          </main>
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );

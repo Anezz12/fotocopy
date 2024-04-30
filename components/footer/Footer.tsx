@@ -1,7 +1,11 @@
 import React from "react";
 
 function Footer() {
-  return <div>Footer</div>;
+  return (
+    <div>
+      <div className="flex flex-col items-center">Footer</div>
+    </div>
+  );
 }
 
 export default Footer;
