@@ -21,12 +21,12 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className="min-h-screen">
         <ActiveSectionContextProvider>
-          <main className="bg-gray-900 min-h-screen">
+          <main className="bg-gray-900 py-20">
             <Navbar />
             <main>{children}</main>
             <div className="min-h-screen flex flex-col items-center"></div>
-            <Footer />
           </main>
+          <Footer />
         </ActiveSectionContextProvider>
       </body>
     </html>
