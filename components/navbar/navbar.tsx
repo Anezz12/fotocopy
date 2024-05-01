@@ -46,7 +46,10 @@ export default function Header() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-[999] bg-white bg-opacity-80 backdrop-blur-sm border-b border-gray-200 dark:bg-gray-900 dark:bg-opacity-80 dark:border-gray-700">
+    <motion.nav
+      ref={ref}
+      className="fixed top-0 left-0 right-0 z-[999] bg-white bg-opacity-80 backdrop-blur-sm border-b border-gray-200 dark:bg-gray-900 dark:bg-opacity-80 dark:border-gray-700"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
@@ -154,6 +157,6 @@ export default function Header() {
           ))}
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 }
