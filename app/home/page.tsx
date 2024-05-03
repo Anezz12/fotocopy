@@ -8,11 +8,11 @@ function page() {
   untuk harga jangan khawatir karena disini harga sesuai
   dengan kualitas. Fotocopy Sahabat ditangani Oleh
   Tim yang Profesional dan sangat berpengalaman di
-  bidangnya. Untuk Kertas, kami menggunakan Kertas Paper One, Copy Laser Paper, Dunia Mas, Sinar Dunia, dll, yang
+  bidangnya. Untuk Kertas,kami menggunakan Kertas Paper One, Copy Laser Paper, Dunia Mas, Sinar Dunia, dll, yang
   merupakan kertas yang terbaik, alat yang lengkap dan
   mesin yang modern.`;
   return (
-    <div className="max-w-7xl mx-auto p-5 py-40">
+    <div className="max-w-7xl mx-auto p-5 py-40 ">
       <div>
         <div className="container mx-auto">
           <div className="row">
@@ -29,7 +29,7 @@ function page() {
                       <span className="text-gray-600 text-sm font-semibold">
                         Tentang Kami
                       </span>
-                      <h2 className="text-3xl font-bold mb-4">
+                      <h2 className="text-3xl font-bold mb-4 ">
                         Fotocopy <em className="text-blue-500">Mistar</em>
                       </h2>
                       <div>

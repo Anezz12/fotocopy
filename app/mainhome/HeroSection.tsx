@@ -14,7 +14,7 @@ function HeroSection() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="mt-2 bg-gradient-to-br from-slate-300 to-slate-500 py-1 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-5xl"
+          className="text-4xl sm:text-4xl text-center font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8"
         >
           Selamat Datang <br />
           Di Mistar FotoCopy
