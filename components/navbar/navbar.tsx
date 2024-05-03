@@ -17,13 +17,10 @@ export default function Header() {
       hash: "/home",
     },
     {
-      name: "About",
-      hash: "/about",
+      name: "Article",
+      hash: "/article",
     },
-    {
-      name: "Contact",
-      hash: "/contact",
-    },
+
     {
       name: "Galery",
       hash: "/galery",
@@ -32,6 +29,10 @@ export default function Header() {
     {
       name: "Service",
       hash: "/service",
+    },
+    {
+      name: "Contact",
+      hash: "/contact",
     },
   ] as const;
 

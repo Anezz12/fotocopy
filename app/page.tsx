@@ -4,6 +4,7 @@ import About from "./mainhome/About";
 import HeroSection from "./mainhome/HeroSection";
 import Skills from "./mainhome/Skills";
 import Service from "./mainhome/Service";
+import Contact from "./mainhome/Contact";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
         <Skills />
         <About />
         <Service />
+        <Contact />
       </div>
     </div>
   );

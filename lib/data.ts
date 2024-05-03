@@ -7,11 +7,11 @@ export const links = [
     name: "Mistar",
     hash: "/home",
   },
-
   {
-    name: "About",
-    hash: "/about",
+    name: "Article",
+    hash: "/article",
   },
+
   {
     name: "Contact",
     hash: "/contact",

@@ -7,7 +7,7 @@ function Title({ text, className }: { text: string; className?: string }) {
         {text}
       </h1>
       <div className="w-40 h-2 bg-blue-500"></div>
-      <div className="w-40 h-2 bg-green-500 translate-x-2"></div>
+      <div className="w-40 h-2 bg-cyan-500 translate-x-2"></div>
     </div>
   );
 }
