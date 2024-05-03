@@ -51,7 +51,7 @@ function Contact() {
                   className="w-full disabled:opacity-75 disabled:pointer-events-none text-center bg-gray-800 hover:bg-gray-600 px-4 py-3 rounded-xl transition duration-200 ease-in-out"
                   type="submit"
                 >
-                  Send Message{" "}
+                  {"Send Message "}
                 </button>
               </div>
             </form>

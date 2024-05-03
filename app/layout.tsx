@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import ActiveSectionContextProvider from "@/components/ui/active-section-context";
 import Footer from "@/components/footer/Footer";
+import Logo from "@/components/logo/Logo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className="">
         <ActiveSectionContextProvider>
           <main className="z-[999] bg-gray-900 dark:bg-grid-black/[0.02] relative py-20 overflow-hidden">
+            <Logo />
             <Navbar />
             <main>{children}</main>
             <div className="min-h-screen flex flex-col items-center"></div>
