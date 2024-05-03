@@ -8,8 +8,8 @@ function about() {
   const day = ` Minggu Hari Libur Nasional`;
 
   return (
-    <div>
-      <div className="flex flex-col items-center bg-cove bg-black py-0">
+    <div className="py-20">
+      <div className="flex flex-col items-center border border-zinc-600 py-0">
         <div className="container">
           <div className="row items-center justify-center text-center">
             <div className="col-md-8">

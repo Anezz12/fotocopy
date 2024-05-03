@@ -18,10 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className="min-h-screen">
+    <html lang="en" className="scroll-smooth ">
+      <body className="">
         <ActiveSectionContextProvider>
-          <main className="bg-gray-900 py-20">
+          <main className="z-[999] bg-gray-900 dark:bg-grid-black/[0.02] relative py-20 overflow-hidden">
             <Navbar />
             <main>{children}</main>
             <div className="min-h-screen flex flex-col items-center"></div>

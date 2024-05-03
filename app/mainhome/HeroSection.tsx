@@ -41,28 +41,30 @@ function HeroSection() {
                           Fotocopy <em className="text-blue-500">Mistar</em>
                         </h2>
                         <div>
-                          <p className=" text-xl text-gray-300 text-justify mb-4 ">
-                            Fotocopy Mistar&nbsp;bergerak di bidang jasa&nbsp;
-                            penggandaan dokumen atau fotocopy dan penjilidan.
-                            Kami siap melayani anda dengan kualitas yang terbaik
-                            dan untuk harga jangan khawatir karena disini harga
-                            sesuai dengan kualitas. Fotocopy
-                            Sahabat&nbsp;ditangani Oleh Tim yang Profesional dan
-                            sangat berpengalaman di bidangnya.
+                          <p className=" text-xl text-gray-300 text-justify  mb-4 ">
+                            Fotocopy Mistar bergerak di bidang jasa penggandaan
+                            dokumen atau fotocopy dan penjilidan. Kami siap
+                            melayani anda dengan kualitas yang terbaik dan untuk
+                            harga jangan khawatir karena disini harga sesuai
+                            dengan kualitas. Fotocopy Sahabat ditangani Oleh Tim
+                            yang Profesional dan sangat berpengalaman di
+                            bidangnya.
                           </p>
                           <p className=" text-xl text-gray-300 text-justify mb-4">
                             Untuk Kertas, kami menggunakan Kertas Paper One,
-                            Copy &amp; Laser Paper, Dunia Mas, Sinar Dunia, dll,
-                            yang merupakan kertas yang terbaik, alat yang
-                            lengkap dan mesin yang modern.
+                            Copy Laser Paper, Dunia Mas, Sinar Dunia, dll, yang
+                            merupakan kertas yang terbaik, alat yang lengkap dan
+                            mesin yang modern.
                           </p>
                         </div>
-                        <a
-                          href="tentang-kami"
-                          className=" md:max-w-lg px-4 py-2 bg-blue-500 text-white rounded-md  hover:bg-blue-600 transition duration-300"
-                        >
-                          Selengkapnya
-                        </a>
+                        <div className="pt-10">
+                          <a
+                            href="tentang-kami"
+                            className=" md:max-w-lg px-4 py-2 bg-blue-500 text-white rounded-md  hover:bg-blue-600 transition duration-300"
+                          >
+                            Selengkapnya
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
