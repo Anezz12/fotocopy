@@ -3,6 +3,7 @@ import React from "react";
 import About from "./mainhome/About";
 import HeroSection from "./mainhome/HeroSection";
 import Skills from "./mainhome/Skills";
+import Service from "./mainhome/Service";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <div className=" py-10">
         <Skills />
         <About />
+        <Service />
       </div>
     </div>
   );
