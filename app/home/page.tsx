@@ -1,4 +1,5 @@
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import Link from "next/link";
 import React from "react";
 
 function page() {
@@ -12,38 +13,58 @@ function page() {
   merupakan kertas yang terbaik, alat yang lengkap dan
   mesin yang modern.`;
   return (
-    <div className="max-w-7xl mx-auto p-5 py-40 ">
+    <div>
       <div>
-        <div className="container mx-auto">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="more-info-content">
-                <div className="row flex flex-wrap -mx-4">
-                  <div className="col-md-6 px-4 mb-8 md:mb-0">
-                    <div className="left-image">
-                      {/* <img src="images/welcome-text-27.applicationoctet-stream" alt="" class="w-full"> */}
-                    </div>
-                  </div>
-                  <div className="col-md-6 px-4 align-self-center flex items-center">
-                    <div className="center-content text-center md:max-w-7xl">
-                      <span className="text-gray-600 text-sm font-semibold">
-                        Tentang Kami
-                      </span>
-                      <h2 className="text-3xl font-bold mb-4 ">
-                        Fotocopy <em className="text-blue-500">Mistar</em>
-                      </h2>
-                      <div>
-                        <span className=" text-xl text-gray-300 text-justify mb-4 ">
-                          <TextGenerateEffect words={words} />
-                        </span>
-                        <p className=" text-xl text-gray-300 text-justify mb-4"></p>
+        <header className="page-header bg-slate-800">
+          <div className="container mx-auto px-4 py-6 flex justify-between items-center">
+            <h1 className="text-xl font-bold mb-2">Mistar</h1>
+            <nav aria-label="Breadcrumbs" className="text-sm">
+              <ol className="flex items-center space-x-2">
+                <li>
+                  <Link href="/" legacyBehavior>
+                    <a className="text-gray-600 hover:text-gray-900">Home</a>
+                  </Link>
+                </li>
+                <li>&gt;</li>
+                <li className="text-gray-600">Mistar</li>
+              </ol>
+            </nav>
+          </div>
+        </header>
+      </div>
+      <div className="max-w-7xl mx-auto p-5 py-40 ">
+        <div>
+          <div className="container mx-auto">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="more-info-content">
+                  <div className="row flex flex-wrap -mx-4">
+                    <div className="col-md-6 px-4 mb-8 md:mb-0">
+                      <div className="left-image">
+                        {/* <img src="images/welcome-text-27.applicationoctet-stream" alt="" class="w-full"> */}
                       </div>
-                      <a
-                        href="/"
-                        className=" text-white rounded-md underline text hover:text-cyan-300"
-                      >
-                        Kemabali Ke Menu
-                      </a>
+                    </div>
+                    <div className="col-md-6 px-4 align-self-center flex items-center">
+                      <div className="center-content text-center md:max-w-7xl">
+                        <span className="text-gray-600 text-sm font-semibold">
+                          Tentang Kami
+                        </span>
+                        <h2 className="text-3xl font-bold mb-4 ">
+                          Fotocopy <em className="text-blue-500">Mistar</em>
+                        </h2>
+                        <div>
+                          <span className=" text-xl text-gray-300 text-justify mb-4 ">
+                            <TextGenerateEffect words={words} />
+                          </span>
+                          <p className=" text-xl text-gray-300 text-justify mb-4"></p>
+                        </div>
+                        <a
+                          href="/"
+                          className=" text-white rounded-md underline text hover:text-cyan-300"
+                        >
+                          Kemabali Ke Menu
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>

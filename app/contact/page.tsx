@@ -1,8 +1,27 @@
+import Link from "next/link";
 import React from "react";
 
 function page() {
   return (
     <div>
+      <div>
+        <header className="page-header bg-slate-800">
+          <div className="container mx-auto px-4 py-6 flex justify-between items-center">
+            <h1 className="text-xl font-bold mb-2">Conatct</h1>
+            <nav aria-label="Breadcrumbs" className="text-sm">
+              <ol className="flex items-center space-x-2">
+                <li>
+                  <Link href="/" legacyBehavior>
+                    <a className="text-gray-600 hover:text-gray-900">Home</a>
+                  </Link>
+                </li>
+                <li>&gt;</li>
+                <li className="text-gray-600">Conatct</li>
+              </ol>
+            </nav>
+          </div>
+        </header>
+      </div>
       <div>
         <div className="container mx-auto py-5">
           <div className="row justify-center">

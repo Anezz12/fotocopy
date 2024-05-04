@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <body className="">
         <ActiveSectionContextProvider>
-          <main className="z-[999] bg-gray-900 dark:bg-grid-black/[0.02] relative py-20 overflow-hidden">
+          <main className="z-[999] bg-gray-900 dark:bg-grid-black/[0.02] relative py-14 overflow-hidden">
             <Logo />
             <Navbar />
             <main>{children}</main>
