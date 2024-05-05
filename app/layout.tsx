@@ -26,7 +26,6 @@ export default function RootLayout({
             <Logo />
             <Navbar />
             <main>{children}</main>
-            <div className="min-h-screen flex flex-col items-center"></div>
           </main>
           <Footer />
         </ActiveSectionContextProvider>
