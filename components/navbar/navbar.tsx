@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import clsx from "clsx";
 
-export default function Header() {
+export default function Navbar() {
   const links = [
     {
       name: "Home",
