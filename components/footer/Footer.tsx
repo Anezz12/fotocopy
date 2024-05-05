@@ -27,9 +27,18 @@ function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-4">Artikel Terbaru</h3>
           <ul>
-            <li>• Manfaat Notebook Catatan sebagai Cerminan Pribadi Unggul</li>
-            <li>• Jenis Penjilidan Buku Yang Perlu Anda Ketahui</li>
-            <li>• Pengertian Mesin Fotocopy dan 3 Keunggulan Pemakaiannya</li>
+            <Link href="/article/contain" className="hover:text-cyan-200">
+              <li>
+                • Manfaat Notebook Catatan sebagai Cerminan Pribadi Unggul
+              </li>
+            </Link>
+            <Link href="/article/contain2" className="hover:text-cyan-200">
+              <li>• Jenis Penjilidan Buku Yang Perlu Anda Ketahui</li>
+            </Link>
+            <Link href="/article/contain3" className="hover:text-cyan-200">
+              {" "}
+              <li>• Pengertian Mesin Fotocopy dan 3 Keunggulan Pemakaiannya</li>
+            </Link>
           </ul>
         </div>
         <div>
