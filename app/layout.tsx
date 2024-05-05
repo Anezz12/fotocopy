@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body className="">
+      <body className="min-h-screen bg-gray-900">
         <ActiveSectionContextProvider>
           <main className="z-[999] bg-gray-900 dark:bg-grid-black/[0.02] relative py-14 overflow-hidden">
             <Logo />

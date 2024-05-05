@@ -12,7 +12,7 @@ function Page() {
                 <h1 className="text-3xl font-bold mb-4">
                   Pengertian Mesin Fotocopy dan 3 Keunggulan Pemakaiannya
                 </h1>
-                <p className="text-gray-700 mb-6">
+                <p className=" text-gray-400 mb-6">
                   Secara umum, pengertian fotocopy adalah metode membuat tinjau
                   atau salinan dokumen pada kertas. Salinan tersebut dibuat
                   dengan memanfaatkan sinar, panas, atau tekanan untuk
@@ -23,24 +23,24 @@ function Page() {
                 <h2 className="text-2xl font-bold mb-2">Artikel Terkait:</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                   <div className=" rounded-lg p-4">
-                    <h3 className="text-lg font-semibold mb-2">
+                    <Link href="" className="text-lg font-semibold mb-2">
                       4 Metode Duplikasi yang Digunakan Pada Mesin Fotocopy
-                    </h3>
-                    <p className="text-gray-700">
-                      1. Fotokopi Elektronstatis 2. Fotokopi Proyeksi 3.
-                      Fotolusi 4. Fotokopi Kontrol
-                    </p>
+                      <p className="text-gray-400">
+                        1. Fotokopi Elektronstatis 2. Fotokopi Proyeksi 3.
+                        Fotolusi 4. Fotokopi Kontrol
+                      </p>
+                    </Link>
                   </div>
                   <div className=" rounded-lg p-4">
-                    <h3 className="text-lg font-semibold mb-2">
-                      Inilah Kekurangan Mesin Fotocopy Jenis Stensil
-                    </h3>
-                    <p className="text-gray-700">
-                      Mesin fotocopy jenis stensil memiliki beberapa kekurangan
-                      seperti kualitas cetakan yang kurang baik, biaya
-                      operasional yang tinggi, dan proses penyalinan yang
-                      lambat.
-                    </p>
+                    <Link href="" className="text-lg font-semibold mb-2">
+                      <h3>Inilah Kekurangan Mesin Fotocopy Jenis Stensil</h3>
+                      <p className="text-gray-400">
+                        Mesin fotocopy jenis stensil memiliki beberapa
+                        kekurangan seperti kualitas cetakan yang kurang baik,
+                        biaya operasional yang tinggi, dan proses penyalinan
+                        yang lambat.
+                      </p>
+                    </Link>
                   </div>
                 </div>
                 <div className="tracking-wide">
@@ -49,7 +49,7 @@ function Page() {
                   </h2>
                   <span className="list-decimal list-inside mb-6">
                     <h3 className="font-bold">1. Fotokopi Elektronstatis</h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-400">
                       Metode ini memanfaatkan partikel tinta kering yang
                       termuati listrik dan ditransfer ke kertas untuk membuat
                       salinan dokumen. Populer karena murah dan berkualitas
@@ -57,14 +57,14 @@ function Page() {
                     </p>
 
                     <h3 className="font-bold">2. Fotokopi Proyeksi</h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-400">
                       Metode ini memproyeksikan gambar dari dokumen asli ke
                       permukaan fotokonduktor sensitif, lalu mentransfer gambar
                       ke kertas menggunakan toner atau tinta cair.
                     </p>
 
                     <h3 className="font-bold">3. Fotolusi</h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-400">
                       Metode ini menggunakan cahaya untuk mencetak gambar atau
                       tulisan dari master ke kertas. Dokumen asli akan diekspos
                       ke sebuah master menggunakan cahaya untuk membentuk gambar
@@ -72,7 +72,7 @@ function Page() {
                     </p>
 
                     <h3 className="font-bold">4. Fotokopi Kontrol</h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-400">
                       Metode ini menggunakan sinar laser untuk mencetak gambar
                       atau tulisan dari dokumen ke kertas. Gambar dibentuk
                       dengan mengontrol sinar laser untuk membuat gambar pada
@@ -81,7 +81,7 @@ function Page() {
                     </p>
                   </span>
                   <div className=" rounded-lg p-4 flex flex-col items-center">
-                    <p className="text-gray-700">
+                    <p className="text-gray-400">
                       Silahkan hubungi kami untuk informasi lebih lanjut atau
                       jika Anda memiliki pertanyaan lain.
                     </p>

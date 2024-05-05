@@ -4,7 +4,7 @@ import React from "react";
 function Contact() {
   return (
     <div>
-      <div className=" py-20">
+      <div className="py-20">
         <Title
           text="Hubungi Kami"
           className="flex flex-col items-center justify-center  cursor-pointer"
