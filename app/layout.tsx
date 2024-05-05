@@ -4,8 +4,9 @@ import "./globals.css";
 
 import ActiveSectionContextProvider from "@/components/ui/active-section-context";
 import Logo from "@/components/logo/Logo";
-import Navbar from "@/components/navbar/navbar";
+
 import Footer from "@/components/footer/Footer";
+import Navbar from "@/components/navbar/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
