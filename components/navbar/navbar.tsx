@@ -1,10 +1,11 @@
 "use client";
-import React, { useState } from "react";
+
+import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "../ui/active-section-context";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import clsx from "clsx";
-import { useActiveSectionContext } from "../ui/active-section-context";
-import { useSectionInView } from "@/lib/hooks";
 
 export default function Header() {
   const links = [
