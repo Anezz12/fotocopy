@@ -1,61 +1,96 @@
-"use client";
-import { ParallaxScroll } from "@/components/ui/parallax-scroll";
-import Link from "next/link";
 import React from "react";
 
-function page() {
-  const images = [
-    "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
-    "https://images.unsplash.com/photo-1505144808419-1957a94ca61e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3070&q=80",
-    "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-    "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
-    "https://images.unsplash.com/photo-1505144808419-1957a94ca61e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3070&q=80",
-    "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-    "https://images.unsplash.com/photo-1682686581854-5e71f58e7e3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-    "https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-    "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-    "https://images.unsplash.com/photo-1439853949127-fa647821eba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2640&q=80",
-    "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
-    "https://images.unsplash.com/photo-1505144808419-1957a94ca61e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3070&q=80",
-    "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-    "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
-    "https://images.unsplash.com/photo-1505144808419-1957a94ca61e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3070&q=80",
-    "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
-    "https://images.unsplash.com/photo-1505144808419-1957a94ca61e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3070&q=80",
-    "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-    "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
-    "https://images.unsplash.com/photo-1505144808419-1957a94ca61e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3070&q=80",
-    "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
-    "https://images.unsplash.com/photo-1505144808419-1957a94ca61e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3070&q=80",
-    "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-    "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
-    "https://images.unsplash.com/photo-1505144808419-1957a94ca61e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3070&q=80",
-  ];
+const Gallery = () => {
   return (
-    <div>
-      <div>
+    <div className="max-w-7xl mx-auto p-5 py-20 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
+      <div className="text-center" data-aos="fade-up" data-aos-delay="">
         <div>
-          <header className="page-header bg-slate-800">
-            <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-              <h1 className="text-xl font-bold mb-2">Galery</h1>
-              <nav aria-label="Breadcrumbs" className="text-sm">
-                <ol className="flex items-center space-x-2">
-                  <li>
-                    <Link href="/" legacyBehavior>
-                      <a className="text-gray-600 hover:text-gray-900">Home</a>
-                    </Link>
-                  </li>
-                  <li>&gt;</li>
-                  <li className="text-gray-600">Galery</li>
-                </ol>
-              </nav>
-            </div>
-          </header>
+          <div
+            className="mb-3 h-[300px] bg-cover bg-center"
+            style={{ backgroundImage: "url(/banner.jpeg)" }}
+          ></div>
         </div>
       </div>
-      <ParallaxScroll images={images} />;
+      <div className="text-center">
+        <div>
+          <div
+            className="mb-3 h-[300px] bg-cover bg-center"
+            style={{ backgroundImage: "url(/banner.jpeg)" }}
+          ></div>
+        </div>
+      </div>
+      <div className="text-center">
+        <div>
+          <div
+            className="mb-3 h-[300px] bg-cover bg-center"
+            style={{ backgroundImage: "url(/banner.jpeg)" }}
+          ></div>
+        </div>
+      </div>
+      <div className="text-center">
+        <div>
+          <div
+            className="mb-3 h-[300px] bg-cover bg-center"
+            style={{ backgroundImage: "url(/banner.jpeg)" }}
+          ></div>
+        </div>
+      </div>
+      <div className="text-center">
+        <div>
+          <div
+            className="mb-3 h-[300px] bg-cover bg-center"
+            style={{ backgroundImage: "url(/banner.jpeg)" }}
+          ></div>
+        </div>
+      </div>
+      <div className="text-center">
+        <div>
+          <div
+            className="mb-3 h-[300px] bg-cover bg-center"
+            style={{ backgroundImage: "url(/banner.jpeg)" }}
+          ></div>
+        </div>
+      </div>
+      <div className="text-center">
+        <div>
+          <div
+            className="mb-3 h-[300px] bg-cover bg-center"
+            style={{ backgroundImage: "url(/banner.jpeg)" }}
+          ></div>
+        </div>
+      </div>
+      <div className="text-center">
+        <div>
+          <div
+            className="mb-3 h-[300px] bg-cover bg-center"
+            style={{ backgroundImage: "url(/banner.jpeg)" }}
+          ></div>
+        </div>
+      </div>
+      <div className="text-center">
+        <div>
+          <div
+            className="mb-3 h-[300px] bg-cover bg-center"
+            style={{ backgroundImage: "url(/banner.jpeg)" }}
+          ></div>
+        </div>
+      </div>
+      <div className="text-center">
+        <div></div>
+      </div>
+      <div className="text-center">
+        <div>
+          <div
+            className="mb-3 h-[300px] bg-cover bg-center"
+            style={{
+              backgroundImage:
+                "url(/images/gallery/galeri-95.applicationoctet-stream)",
+            }}
+          ></div>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
-export default page;
+export default Gallery;
